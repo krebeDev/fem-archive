@@ -50,7 +50,7 @@ p {
 
 @media(min-width: 375px) {
       #supervisor {
-            top: 0; /* Revert the position back to normal  position on small screen*/
+            top: 0 !important; /* Revert the position back to normal  position on small screen*/
       } 
 }
 
@@ -70,6 +70,6 @@ p {
 
 @media(min-width: 375px) {
       #calc {
-            top: 0;
+            top: 0 !important;
       } 
 }
