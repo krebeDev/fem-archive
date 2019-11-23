@@ -45,7 +45,7 @@ p {
 
 #supervisor {
       border-color: var(--cyan) !important;
-      top: 130px;  /*Set the position to be midpoint of the div */
+      top: 130px !important;  /*Set the position to be midpoint of the div */
 }
 
 @media(min-width: 375px) {
@@ -65,7 +65,7 @@ p {
 
 #calc {
       border-color: var(--blue) !important;
-      top: 130px; 
+      top: 130px !important; 
 }
 
 @media(min-width: 375px) {
