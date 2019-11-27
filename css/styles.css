@@ -1,0 +1,56 @@
+body {
+      background: url(/images/bg-intro-desktop.png);
+      background-color: hsl(0, 100%, 74%);
+      color: hsl(249, 10%, 26%);
+      font-family: 'Poppins', sans-serif;
+}
+
+#intro-header {
+      font-weight: 700;
+}
+
+#intro-content {
+      font-weight: 400;
+}
+
+#trial {
+   padding: 8px; 
+   box-shadow: 1px 7px 7px hsla(249, 10%, 26%, 0.6);
+   background-color: hsl(248, 32%, 49%);
+   border: 1px solid hsl(248, 32%, 49%);
+
+}
+
+#claim {
+      font-weight: 700;
+      font-size: 0.7rem;
+      letter-spacing: 0.05rem;
+      padding: 10px;
+      background-color: hsl(154, 59%, 51%);
+      border: 1px solid hsl(154, 59%, 51%);
+      box-shadow: -1px 3px 3px hsl(119, 100%, 22%);
+}
+
+#tc-notice {
+      font-size: 0.6rem;
+      color: hsl(246, 25%, 77%);
+}
+
+#tc-notice a {
+      color: hsl(0, 100%, 74%);
+}
+
+.attribution { 
+      font-size: 11px; text-align: center; 
+}
+    
+.attribution a { 
+      color: hsl(228, 45%, 44%); 
+}
+
+.error-message {
+      font-size: 0.7rem;
+      color: hsl(0, 100%, 74%);
+      font-style: italic;
+      margin-bottom: 0;
+}
