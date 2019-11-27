@@ -49,8 +49,10 @@ body {
 }
 
 .error-message {
+      width: 100%;
       font-size: 0.7rem;
       color: hsl(0, 100%, 74%);
       font-style: italic;
       margin-bottom: 0;
+      text-align: right;
 }
