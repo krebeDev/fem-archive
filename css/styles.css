@@ -1,0 +1,100 @@
+:root {
+      --dark-blue: hsl(243, 87%, 12%);
+      --desaturated-blue: hsl(238, 22%, 44%);
+      --bright-blue: hsl(224, 93%, 58%);
+      --moderate-cyan: hsl(170, 45%, 43%);
+      --light-grayish-blue: hsl(240, 75%, 98%);
+      --light-gray: hsl(0, 0%, 75%);
+}
+
+body {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      color: var(--dark-blue);
+}
+
+h1, h2 {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+}
+
+h1 {
+      font-size: 2.1rem;
+}
+
+.header-nav {
+      text-decoration: none;
+      color: var(--desaturated-blue);
+}
+
+#productive {
+      background: url(./../images/bg-curve-desktop.svg) no-repeat center center/cover;
+}
+
+#card-name {
+      font-weight: 700;
+}
+
+#job-title, #card-name {
+      font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 375px) {
+      #productive {
+            background: url(./../images/bg-curve-mobile.svg) no-repeat center center/cover;
+      }
+
+      section {
+            text-align: center;
+      }
+}
+
+::placeholder {
+      opacity: 0.5 !important;
+}
+
+#cta-subscribe, #btn-access {
+      background-color: var(--bright-blue);
+      color: var(--light-grayish-blue);
+}
+
+#cta-subscribe:hover {
+      background-color: var(--desaturated-blue);
+}
+
+#productive a {
+      text-decoration: none;
+      color: var(--moderate-cyan);
+      border-bottom: 1px solid;
+      padding: 5px;
+      outline: none;
+}
+
+#testimonial-text {
+      font-size: 0.7rem !important;
+}
+
+#access {
+      background-color: var(--desaturated-blue);
+      color: var(--light-grayish-blue);
+}
+
+.attribution { 
+      font-size: 11px; text-align: center; 
+}
+.attribution a { 
+      color: hsl(228, 45%, 44%); }
+
+footer {
+      background-color: var(--dark-blue);
+      color: var(--light-gray);
+}
+
+#footer-info {
+      border-top: 1px solid var(--light-grayish-blue);
+}
+
+footer a {
+      text-decoration: none;
+      color: var(--light-gray);
+}
