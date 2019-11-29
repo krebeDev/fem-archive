@@ -83,7 +83,27 @@ h1 {
       font-size: 11px; text-align: center; 
 }
 .attribution a { 
-      color: hsl(228, 45%, 44%); }
+      color: hsl(228, 45%, 44%); 
+}
+
+i {
+      font-size: 1.5rem;
+      border: 1px solid var(--light-grayish-blue);
+      padding: 0.7rem;
+      /* margin-top: 1rem; */
+      margin-left: 0.7rem;
+      
+}
+
+.fa-facebook-f {
+      padding-right: 1rem;
+      padding-left: 1rem;
+}
+
+.fa-instagram {
+      padding-left: 0.8rem;
+      padding-right: 0.8rem;
+}
 
 footer {
       background-color: var(--dark-blue);
