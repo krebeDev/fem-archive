@@ -64,7 +64,7 @@ header .nav-link:hover {
             font-size: 2rem;
       }
       .cta {
-            backgroud: url(./../images/bg-boost-mobile.svg) no repeat center center/cover;
+            background: url(./../images/bg-boost-mobile.svg) no repeat center center/cover;
       }
       #shortner-wrapper {
             background: url(./../images/bg-shorten-mobile.svg)
