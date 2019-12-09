@@ -1,0 +1,142 @@
+:root {
+      --cyan: hsl(180, 66%, 49%);
+      --dark-violet: hsl(257, 27%, 26%);
+      --gray: hsl(0, 0%, 75%);
+      --grayish-violet: hsl(257, 7%, 63%);
+      --very-dark-blue: hsl(255, 11%, 22%);
+      --very-dark-violet: hsl(260, 8%, 14%);
+      --Red: hsl(0, 87%, 67%);
+}
+
+body {
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--dark-violet);
+}
+
+h1, h2, h3,h4, h5 {
+      font-weight: 700;
+      color: var(--very-dark-blue);
+}
+
+header .nav-item, #btn-access {
+      font-weight: 500;
+}
+
+#btn-login,
+header .nav-link,
+header .nav-link:link,
+header .nav-link:visited {
+      color: var(--grayish-violet);
+}
+
+#btn-login:hover,
+header .nav-link:focus,
+header .nav-link:hover {
+      color: var(--very-dark-blue);
+}
+
+.btn-signup, .btn-copy {
+      background-color: var(--cyan);
+      color: #fcfffd;
+}
+
+.btn-signup:hover, .btn-copy:hover {
+    background-color: hsla(180, 66%, 49%, 0.5);
+    color: #fcfffd;
+}
+
+.btn-clicked {
+      background-color: var(--dark-violet);
+}
+
+.btn-clicked:focus, .btn-clicked:hover {
+      background-color: var(--dark-violet);
+}
+
+#intro-title {
+      font-size: 4rem;
+}
+
+@media (max-width: 375px) {
+      #intro-title {
+            font-size: 2rem;
+      }
+      .cta {
+            backgroud: url(./../images/bg-boost-mobile.svg) no repeat center center/cover;
+      }
+      #shortner-wrapper {
+            background: url(./../images/bg-shorten-mobile.svg)
+      }
+
+    }
+
+#shortner-wrapper {
+      background: url(./../images/bg-shorten-desktop.svg) no-repeat center center/cover;
+      background-color: var(--dark-violet);
+}
+
+.cta {
+      background: url(./../images/bg-boost-desktop.svg) no-repeat center center/cover;
+      background-color: var(--dark-violet);
+}
+
+.stats-card img {
+      background-color: var(--dark-violet);
+      padding: 5px;    
+}
+
+.cta-title {
+      color: #fcfffd;
+}
+
+.error-message {
+      color: var(--Red);
+}
+
+.stats {
+      background-color: var(--gray);
+}
+
+footer {
+      background-color: var(--very-dark-violet);
+}
+
+.social {
+      padding: 0.3rem;
+}
+
+.social:hover{
+      background: var(--cyan);
+}
+
+.blue-text p {
+      color: var(--cyan);
+}
+
+footer h5 {
+      color: #ffffff;
+}
+
+footer .nav-link,
+footer .nav-link:link,
+footer .nav-link:visited {
+      color: rgb(185, 177, 177);
+      padding-top: 2px;
+      font-size: 1rem;
+}
+
+footer .nav-link:focus,
+footer .nav-link:hover {
+      color: var(--cyan);
+}
+
+
+.attribution { 
+      font-size: 12px; text-align: center;
+}
+
+.attribution a { 
+      color: var(--gray) 
+}
