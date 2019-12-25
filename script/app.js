@@ -264,11 +264,9 @@ function setTheme(condition) {
             document.documentElement.className = 'theme-dark';
             themeName.textContent = 'Light Mode';
             localStorage.setItem('theme', 'theme-dark');
-            filterRegion.style.background = `url('./../images/_ionicons_svg_md-arrow-dropdown-w.svg') 96% / 15% no-repeat var(--bg-color)`;
       } else {
             document.documentElement.className = 'theme-light';
             themeName.textContent = 'Dark Mode'
             localStorage.setItem('theme', 'theme-light');
-            filterRegion.style.background = `url('./../images/_ionicons_svg_md-arrow-dropdown.svg') 96% / 15% no-repeat var(--bg-color)`;
       }
 }
