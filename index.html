@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-light">
+      <head>
+            <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="description" content="Rest countries using API">
+            <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+            <!-- Google font  -->
+            <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,600,800&display=swap" rel="stylesheet">
+
+            <!-- Custom CSS  -->
+            <link rel="stylesheet" href="css/styles.css">
+
+            <title>Rest Countries</title>
+
+      </head>
+      <body>
+            <header>
+                  <div class="header--bg py-4">
+                        <div class="container">
+                              <div class="row">
+                                    <div class="col-10">
+                                          <h1>Where in the world?</h1>
+                                    </div>
+                                    <div class="theme-switch col-2 text-right">
+                                          <span class="svg-icon">
+                                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 512 512"><path fill = "currentColor" d="M401.4 354.2c-2.9.1-5.8.2-8.7.2-47.9 0-93-18.9-126.8-53.4-33.9-34.4-52.5-80.1-52.5-128.8 0-27.7 6.1-54.5 17.5-78.7 3.1-6.6 9.3-16.6 13.6-23.4 1.9-2.9-.5-6.7-3.9-6.1-6 .9-15.2 2.9-27.7 6.8C135.1 95.5 80 168.7 80 255c0 106.6 85.1 193 190.1 193 58 0 110-26.4 144.9-68.1 6-7.2 11.5-13.8 16.4-21.8 1.8-3-.7-6.7-4.1-6.1-8.5 1.7-17.1 1.8-25.9 2.2z"/></svg>
+                                          </span>
+                                          <span class="theme-name">Dark Mode</span>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </header>
+            <main>
+                  <!-- All countries information -->
+                  <section class="countries container py-5">
+                        <div class="search-bar row">
+                              <div class="col pb-3 pb-md-0">
+                                    <div class="search-wrapper">
+                                          <span class="svg-icon icon--search">
+                                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 512 512"><path fill = "currentColor" d="M443.5 420.2L336.7 312.4c20.9-26.2 33.5-59.4 33.5-95.5 0-84.5-68.5-153-153.1-153S64 132.5 64 217s68.5 153 153.1 153c36.6 0 70.1-12.8 96.5-34.2l106.1 107.1c3.2 3.4 7.6 5.1 11.9 5.1 4.1 0 8.2-1.5 11.3-4.5 6.6-6.3 6.8-16.7.6-23.3zm-226.4-83.1c-32.1 0-62.3-12.5-85-35.2-22.7-22.7-35.2-52.9-35.2-84.9 0-32.1 12.5-62.3 35.2-84.9 22.7-22.7 52.9-35.2 85-35.2s62.3 12.5 85 35.2c22.7 22.7 35.2 52.9 35.2 84.9 0 32.1-12.5 62.3-35.2 84.9-22.7 22.7-52.9 35.2-85 35.2z"/></svg>
+                                          </span>
+                                          <input type="search" placeholder="Search for a country..." id="search-country" aria-label="search by country">
+                                    </div>
+                              </div>
+
+                              <div class="col text-md-right">
+                                          <select name="filter-region" id="filter-region" aria-label="Filter by region">
+                                                <option value="">Filter by region</option>
+                                                <option value="africa">Africa</option>
+                                                <option value="america">Americas</option>
+                                                <option value="asia">Asia</option>
+                                                <option value="europe">Europe</option>
+                                                <option value="oceania">Oceania</option>
+                                          </select>
+                                    </div>
+                              </div>
+                        </div>
+                        
+                        <div class="countries__info row justify-content-around py-3"></div>
+                  </section>
+                  <!-- End of all countries information -->
+
+
+                  <!-- Select country detailed information -->
+                  <section class="country container pt-5">
+                        <div>
+                              <button class="btn btn--back">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 512 512"><path fill = "currentColor" d="M427 234.625H167.296l119.702-119.702L256 85 85 256l171 171 29.922-29.924-118.626-119.701H427v-42.75z"/></svg>
+                                    &nbsp;Back</button>
+                        </div>
+
+                        <div class="country__detail row py-5 justify-content-between align-items-center">
+                              <div class="col-lg-4">
+                                    <img class="country__flag img-fluid" src="#" alt="flag">
+                              </div>
+                              <div class="col-lg-7 py-3">
+                                    <div class="row">
+                                          <div class="col">
+                                                <h4 class="country__name"></h4>
+                                          </div>
+                                    </div>
+                                    <div class="row">
+                                          <div class="col-lg-5">
+                                                <p class="native-name">
+                                                      <span class="text--title">Native Name:</span>
+                                                      <span class="native-name-val"></span>
+                                                </p>
+                                                <p class="population">
+                                                      <span class="text--title">Population:</span>
+                                                      <span class="population-val"></span>
+                                                </p>
+                                                <p class="region">
+                                                      <span class="text--title">Region:</span>
+                                                      <span class="region-val"></span>
+                                                </p>
+                                                <p class="sub-region">
+                                                      <span class="text--title">Sub Region:</span>
+                                                      <span class="sub-region-val"></span>
+                                                </p>
+                                                <p class="capital">
+                                                      <span class="text--title">Capital:</span>
+                                                      <span class="capital-val"></span>
+                                                </p>
+                                          </div>
+                                          <div class="col-lg-6">
+                                                <p class="tld">
+                                                      <span class="text--title">Top Level Domain:</span>
+                                                      <span class="tld-val"></span>
+                                                </p>
+                                                <p class="currencies">
+                                                      <span class="text--title">Currencies:</span>
+                                                      <span class="currencies-val"></span>
+                                                </p>
+                                                <p class="languages">
+                                                      <span class="text--title">Languages:</span>
+                                                      <span class="languages-val"></span>
+                                                </p>
+                                          </div>
+                                    </div>
+                                    <div class="row pt-3">
+                                          <div class="col">
+                                                <p class="country__borders">
+                                                      <span class="text--title">Border Countries:</span>
+                                                      <span class="border-val"></span>
+                                                </p>
+                                          </div>
+                                    </div>
+                              </div>
+
+                        </div>
+                        
+                  </section>
+                  <!-- End of select country detailed information -->
+
+            </main>
+            <script src="script/app.js"></script>
+      </body>
+</html>
