@@ -201,6 +201,7 @@ function renderCountriesInfo(pNode, alpha3Code, flag, name, population, region, 
 
       addClass(card, 'shadow');
       addAttr(infoFlag, 'src', `${flag}`);
+      addAttr(infoFlag, 'alt', `${name} flag`);
 
       card.appendChild(infoFlag);
       card.appendChild(bodywrapper);
