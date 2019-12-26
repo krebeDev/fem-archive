@@ -51,13 +51,12 @@ h4 {
       color: var(--primary-color);
       border-radius: 2px;
       padding: 0.6rem 0.9rem 0.6rem 0.6rem;
-      background-color: var(--bg-color);
       box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px;
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
       border: none;
-      background: url('./../images/_ionicons_svg_md-arrow-dropdown.svg') 96% / 15% no-repeat;
+      background: url('./../images/_ionicons_svg_md-arrow-dropdown.svg') 96% / 15% no-repeat var(--bg-color);
 }
 
 .country {
