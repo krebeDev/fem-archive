@@ -57,6 +57,7 @@ h4 {
       -moz-appearance: none;
       appearance: none;
       border: none;
+      background: url('./../images/_ionicons_svg_md-arrow-dropdown.svg') 96% / 15% no-repeat;
 }
 
 .country {
