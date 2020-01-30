@@ -5,7 +5,11 @@
 ## Introduction
 
 This landing page design is one of many coding challenges on [Frontend Mentor](https://www.frontendmentor.io/).<br /> 
-This solution is a mobile-first responsive design that adapts to any screen size and still looks elegant. :cowboy_hat_face:
+
+## Features 
+
+* Mobile-first responsive design.
+* Client-side JavaScript form validation.
 
 [See demo site](https://krebedev.github.io/fylo-dark-theme-landing-page/)
 
