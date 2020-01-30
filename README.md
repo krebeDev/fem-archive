@@ -1,4 +1,4 @@
-# Frontend Mentor - Fylo Dark-Theme Landing Page
+# Fylo Dark-Theme Landing Page
 
 ![Design preview of the Fylo dark theme landing page coding challenge](./assets/desktop-preview.jpg)
 
