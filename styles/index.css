@@ -224,6 +224,7 @@ header {
   padding-bottom: 1rem;
   padding-right: 1rem;
   overflow-x: scroll;
+  scrollbar-width: none;
 }
 
 .testimonial-row::-webkit-scrollbar {
