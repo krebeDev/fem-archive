@@ -1,0 +1,75 @@
+/* Style-guide to overwrite Bootstrap styles */
+
+:root {
+      --red: hsl(0, 78%, 62%);
+      --cyan: hsl(180, 62%, 55%);
+      --orange: hsl(34, 97%, 64%);
+      --blue: hsl(212, 86%, 64%);
+      --very-dark-blue: hsl(234, 12%, 34%);
+      --grayish-blue: hsl(229, 6%, 66%);
+      --breakpoint-lg: 1440px;
+      --breakpoint-sm: 375px;
+}
+
+body {
+      font-family: 'Poppins', sans-serif;
+      font-size: 15px;
+}
+
+.attribution { 
+      font-size: 11px; text-align: center; 
+}
+    .attribution a { 
+          color: hsl(228, 45%, 44%); 
+}
+
+#delivery {
+      font-weight: 200;
+}
+
+#ptech {
+      font-weight: 600;
+}
+
+h3, h4 {
+      color: var(--very-dark-blue);
+}
+
+p {
+      color: var(--grayish-blue);
+}
+
+.border-5 {
+      border-width: 5px !important;
+}
+
+#supervisor {
+      border-color: var(--cyan) !important;
+      top: 130px !important;  /*Set the position to be midpoint of the div */
+}
+
+@media(min-width: 375px) {
+      #supervisor {
+            top: 0 !important; /* Revert the position back to normal  position on small screen*/
+      } 
+}
+
+#team-builder {
+      border-color: var(--red) !important;
+}
+
+#karma {
+      border-color: var(--orange) !important;
+      
+}
+
+#calc {
+      border-color: var(--blue) !important;
+      top: 130px !important; 
+}
+
+@media(min-width: 375px) {
+      #calc {
+            top: 0 !important;
+      } 
+}
