@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Coming soon page for Base Apparel">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Google font  -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+</head>
+  <body>
+      
+        <header class="container mb-4" id="coming-soon">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col">
+                    <nav class="navbar py-5">
+                        <a class="navbar-brand" href="#">
+                          <img src="images/logo.svg" width="158" height="33" class="d-inline-block align-top" alt="Base Apparel logo">
+                        </a>
+                      </nav>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+                <picture>
+                    <source 
+                       media="(max-width: 375px)"
+                       srcset="images/hero-mobile.jpg">
+                    <source 
+                       media="(min-width: 376px)"
+                       srcset="images/hero-desktop.jpg">
+                    <img src="images/hero-desktop.jpg" class="img-fluid" alt="Base Apparel hero">
+                 </picture>
+            </div>
+           <div class="col-lg-6 px-4 pb-4" id="moveup">
+                      <h2 class="text-uppercase large pt-5"><span id="weight-thin">We're</span><br><span id="bold-dark">coming <br> soon</span></h2>
+                      <div class="row">
+                        <div class="col-lg-9">
+                            <p>Hello fellow shoppers! We're currently building our new fashion store.
+                                Add your email below to stay up-to-date with announcements and our launch deals.</p>
+                        </div>
+                      </div>
+                        <form novalidate >
+                          <div class="row">
+                            <div class="col-lg-9">
+                                <div class="input-group input-group">
+                                    <input type="email" id="emailaddress" name ="userEmail"  class="form-control rounded-pill" placeholder="Email Address" 
+                                    aria-describedby="submitEmail" required>
+                                    
+                                    <div class="input-group-append" id="btn-wrapper">
+                                      <button class="btn btn-dark rounded-pill px-4 ml-n5 " id="submitEmail" type="submit">></button>
+                                    </div>  
+                                  </div>
+                                  <div class="py-2"><span class="on-error" aria-live="polite"></span></div>
+                            </div>
+                          </div>
+                        </form>
+           </div>         
+          </div>
+        </header>
+
+      <footer class="container py-4">
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://twitter.com/krebedev" target="_blank">krebeDev</a>
+      </p>
+    </footer>
+      <script src="script/main.js"></script>
+  </body>
+</html>
