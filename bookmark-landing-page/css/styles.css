@@ -1,0 +1,341 @@
+:root {
+      
+      --soft-blue: hsl(231, 69%, 60%);
+      --soft-red: hsl(0, 94%, 66%);
+      --grayish-blue: hsl(229, 8%, 60%);
+      --very-dark-blue: hsl(229, 31%, 21%);
+}
+
+body {
+      font-family: 'Rubik', sans-serif;
+      font-size: 18px;
+      color: var(--grayish-blue);
+}
+
+h1,
+h2,
+h3 {
+      color: var(--very-dark-blue);
+}
+
+header ul li,
+footer ul li,
+.contact__stats {
+      text-transform: uppercase;
+}
+
+header ul li a,
+header ul li a:link {
+      color: var(--grayish-blue);
+}
+
+.navbar {
+      letter-spacing: 0.1rem;
+}
+
+footer ul li a {
+      color: #ffffff;
+}
+
+
+header ul li a:focus,
+header ul li a:hover,
+header ul li a:active,
+footer ul li a:focus,
+footer ul li a:hover {
+      color: var(--soft-red);
+}
+
+header ul li button {
+      border-radius: 4px;
+      padding: 0.4rem 0.9rem;
+      border: 2px solid var(--soft-red);
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+}
+
+
+.bookmark__primary--btn {
+      background-color: var(--soft-blue);
+      color: #ffffff;
+}
+
+.bookmark__secondary--btn {
+      background-color: var(--grayish-blue);
+}
+
+.bookmark__primary--btn:hover {
+      background-color: #ffffff;
+      border: 2px solid var(--soft-blue);
+      color: var(--soft-blue);
+}
+
+.bookmark__secondary--btn:hover {
+      background-color: #ffffff; 
+      border: 2px solid var(--grayish-blue);
+      color: var(--grayish-blue);
+}
+
+.btn--red {
+      background-color: var(--soft-red);
+      color: #ffffff;
+}
+
+.btn--red:hover {
+      border: 2px solid var(--soft-red);
+      background-color: #ffffff;
+      color: var(--soft-red);
+}
+
+.extension__cards__col {
+      border-radius: 0.8rem;
+}
+
+
+.faqs__accordion__block {
+      border-top: 2px solid var(--grayish-blue);     
+}
+
+.faqs__accordion__block,
+.features__tab{
+      cursor: pointer;
+}
+
+.features__tab__heading:hover,
+.faqs__accordion__question:hover {
+      color: var(--soft-red);
+}
+.faqs__accordion__col--last,
+.features__tab {
+      border-bottom: 2px solid var(--grayish-blue);
+}
+
+.faqs__accordion__question,
+.features__tab__heading {
+      font-weight: 400;
+      color: var(--very-dark-blue);
+      font-size: 1.5rem;
+}
+
+.faqs__accordion__panel,
+.features__tab__content {
+      display: none;
+}
+
+.arrow--active {
+      transform: rotate(180deg);
+      stroke: var(--soft-red); /* not working */
+}
+
+.active {
+      display: block;
+}
+
+.tab--active {
+      border-bottom: 3px solid var(--soft-red);
+}
+
+.extension__cards__col button {
+      font-size: 1rem;
+      padding-top: 0.7rem;
+      padding-bottom: 0.7rem;
+}
+
+.contact {
+      background-color: var(--soft-blue);
+}
+
+.contact__wrapper,
+.contact__stats,
+.contact__heading {
+      color: #ffffff;
+}
+
+.contact__stats {
+      font-weight: 500;
+      letter-spacing: 0.2rem;
+      font-size: 0.8rem;
+}
+
+.contact__heading {
+      font-size: 2.5rem;
+      padding: 2rem 0.1rem;
+}
+
+.email-error {
+      background-color: var(--soft-red);
+      color: #ffffff;
+      text-align: left;
+      padding: 0.5rem;
+      border-bottom-left-radius: 0.3rem;
+      border-bottom-right-radius: 0.3rem;
+      font-size: 0.9rem;
+      font-style: italic;
+      font-weight: 500;
+}
+
+
+.invalid--field {
+      border: 2px solid var(--soft-red);
+}
+
+
+.footer--bg {
+      background-color: var(--very-dark-blue);
+}
+#attribution-wrapper {
+      background-color: hsl(229, 32%, 17%);;
+}
+
+.attribution { 
+      font-size: 12px; text-align: center; 
+}
+
+.attribution a {
+      text-decoration: none;
+}
+
+.attribution,
+.attribution a,
+.attribution a:link
+.attribution a:visited { 
+      color: #c7c4c4
+}
+
+.footer__socials i {
+      color: #ffffff;
+      font-size: 1.6rem;
+}
+
+.footer__socials i:hover,
+.attribution a:hover,
+.attribution a:focus {
+      color: var(--soft-red);
+}
+
+
+.blue-bg-right{
+      width: 37%;
+      height: 20rem;
+      background-color: var(--soft-blue);
+      margin-top: -330px;
+      margin-left: 63%;
+      border-top-left-radius: 40%;
+      border-bottom-left-radius: 40%;
+      z-index:-1;
+    }
+
+    .blue-bg-left {
+      width: 40%;
+      height:20rem;
+      background-color: var(--soft-blue);
+      margin-top: -280px;
+      border-top-right-radius: 40%;
+      border-bottom-right-radius: 40%;
+      z-index:-1;
+    }
+
+
+@media (max-width: 414px) {
+      h1,
+      h2,
+      h3 {
+            font-size: 1.8rem;
+            text-align: center;
+      }
+
+      p {
+            text-align: center;
+      }
+
+      .intro__text__col button {
+            font-size: 0.9rem;
+      }
+
+      .features__tab__heading {
+            font-size: 1.4rem;
+      }
+      
+      .faqs__accordion__question,
+      .accordion__answer {
+            text-align: left;
+            font-size: 1rem;
+      }
+
+      .contact__stats {
+            font-weight: 400;
+      }
+
+      .contact__heading {
+            font-size: 1.5rem;
+      }
+      
+      .extension__cards__col button {
+            padding-left: 2rem;
+            padding-right: 2rem;
+      }
+
+      .blue-bg-right {
+            width: 70%;
+            margin-left: 30%;
+            height: 10rem;
+            position: relative;
+            top: -11rem; 
+          }
+
+      .intro__text__col {
+            margin-top: 2rem;
+      }
+
+      .blue-bg-left {
+            width: 73%;
+            height: 10rem;
+            position: relative;
+            top: -7.5rem;   
+            margin-bottom: 10rem;        
+      }
+
+      .features__aim--col {
+            margin-top: 10rem;
+      }
+
+      .features__tab__content--col {
+            margin-top: 1.5rem;
+      }    
+}
+
+
+@media (min-width: 415px) and (max-width: 860px) {
+
+      h1,
+      h2,
+      h3,
+      p {
+            text-align: center;
+      }
+      
+      .blue-bg-right {
+            width: 73%;
+            margin-left: 27%;
+            height: 18rem;
+            margin-top: -35rem; 
+            margin-bottom: 18rem;
+          }
+
+      .blue-bg-left {
+            width: 63%;
+            height: 18rem;
+            margin-top: -28rem;
+            margin-bottom: 14rem;        
+      } 
+
+      .faqs__accordion__question,
+      .accordion__answer {
+            text-align: left;
+      }
+
+      .extension__cards__col {
+             margin-left: 10rem;
+             margin-right: 10rem;
+      }
+}
