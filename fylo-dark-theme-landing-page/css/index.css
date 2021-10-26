@@ -1,0 +1,451 @@
+:root {
+      --dark-blue: hsl(217, 28%, 15%);
+      --main-bg: hsl(218, 28%, 13%);
+      --footer-bg: hsl(216, 53%, 9%);
+      --tsm-bg: hsl(219, 30%, 18%);
+      --blue: hsl(198, 60%, 50%);
+      --white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+      box-sizing: border-box;
+}
+
+html {
+      font-family: sans-serif;
+}
+
+body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      color: var(--white);
+      background: var(--main-bg);
+}
+
+h1, h2, h3 {
+      font-family: 'Raleway', sans-serif;
+      line-height: 1.3;
+}
+
+h1 {
+      font-size: 2rem;
+}
+
+h2 {
+      font-size: 1.8rem;
+}
+
+h3 {
+      font-size: 1.3rem;
+}
+
+p {
+      margin-bottom: 1rem;
+      line-height: 1.8;
+}
+
+section {
+      padding: 3rem 0;
+}
+
+.container {
+      max-width: 1200px;
+      padding: 0 1rem;
+      margin: 0 auto;
+}
+
+.flex-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.col {
+      text-align: center;
+      margin: 1rem 0;
+}
+
+a {
+      text-decoration: none;
+}
+
+ul {
+      list-style-type: none;
+      padding-left: 0;
+}
+
+.img-responsive {
+      max-width: 100%;
+      height: auto;
+}
+
+.navbar-logo {
+      width: 6rem;
+      height: auto;
+}
+
+.nav-link {
+      color: var(--white);
+      font-weight: 700;
+}
+
+.nav-link:not(:last-child) {
+      padding-right: 1rem;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+      color: var(--blue);
+}
+
+.intro {
+     background: url("./../assets/bg-curvy-mobile.svg") no-repeat center bottom var(--dark-blue);
+}
+
+.intro-content {
+     flex-direction: column;
+} 
+
+.intro-content .col {
+    text-align: center;
+} 
+
+.intro-visual,
+.cta-visual {
+      max-width: 40rem;
+}
+
+.intro-text {
+      max-width: 35rem;
+}
+
+.intro-body {
+      margin-bottom: 2rem;
+}
+
+button, input[type="email"] {
+      outline: none;
+      border: none;
+}
+
+.btn-primary {
+      color: var(--white);
+      background: var(--blue);
+      padding: 1rem;
+      border-radius: 25px;
+      font-weight: 700;
+}
+
+.intro-btn {
+      padding-right: 4rem;
+      padding-left: 4rem;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+      background: var(--white);
+      color: var(--blue);
+}
+
+.feature-card,
+.cta-text {
+      max-width: 30rem;
+}
+
+.cta-link {
+      color: var(--blue);
+      padding-bottom: 0.3rem;
+      border-bottom: 1px solid;
+}
+
+
+.fa-arrow-right {
+      font-size: 0.5rem;
+      color: var(--main-bg);
+      background-color: var(--blue);
+      border-radius: 50%;
+      padding: 0.1rem 0.15rem;
+}
+
+.fa-arrow-right:hover,
+.fa-arrow-right:focus {
+      background: var(--white);
+}
+
+.tsm-row {
+      justify-content: space-around;
+      position: relative;
+}
+
+.quotes {
+      position: absolute;
+      top: -1.5rem;
+      left: -0.5rem;
+      z-index: -1;
+}
+
+.testimonial-card{
+      background: var(--tsm-bg);
+      padding: 0.8rem 1.5rem;
+      text-align: left;
+      border-radius: 5px;
+      max-width: 30rem;
+      box-shadow: 0.5rem 0.6rem 1rem #141414;
+}
+
+.tsm-author p {
+      line-height: 1.4;
+}
+
+.tsm-author-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      float: left;
+      margin-right: 1rem;
+}
+
+.tsm-author-name {
+      font-weight: 700;
+}
+
+.tsm-author-jtittle {
+      font-size: 0.7rem;
+}
+
+.sign-up {
+      margin-bottom: -12rem;
+      z-index: 5;
+      position: relative;
+}
+
+.sign-up-row {
+      flex-direction: column;
+      max-width: 800px;
+      background: var(--dark-blue);
+      margin: auto;
+      padding: 0 1rem 1rem 1rem;
+      border-radius: 5px;
+      box-shadow: 0.5rem 0.6rem 1rem #141414;
+}
+
+.sign-up-row .col {
+      text-align: center;
+}
+
+
+input[type="email"] {
+      padding: 1rem;
+      border-radius: 25px;
+      width: 100%;
+      margin-bottom: 2rem;
+}
+
+.sign-up button {
+      width: 100%;
+      margin: auto;
+}
+
+#sign-up-form {
+      position: relative;
+}
+.error-message {
+      position: absolute;
+      bottom: 2.8rem;
+      display: block;
+      color: #f54242;
+      position: absolute;
+      margin: 1rem;
+}
+
+.hide {
+      display: none;
+}
+
+footer {
+      background: var(--footer-bg);
+      padding-top: 12rem;
+}
+
+.footer-row {
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+}
+
+.footer-row .col {
+      text-align: left;
+}
+
+footer li {
+      line-height: 1.8;
+}
+
+footer h3 {
+      line-height: 1;
+      font-size: 1rem;
+}
+
+.location {
+      padding-bottom: 0;   
+      margin-bottom: 0;
+}
+
+.location-icon {
+      float: left;
+}
+
+.contact-info {
+      margin-top: 0.5rem;
+      padding-top: 0;
+}
+
+.contact-icons {
+      margin-right: 1rem;
+}
+
+.address-wrapper {
+      margin-top: 2rem;
+}
+
+.address-details {
+      margin-left: 2.5rem;
+}
+
+
+.social-links {
+      align-self: center;
+}
+
+.fab {
+      border: 1px solid;
+      border-radius: 50%;
+      padding: 0.7rem;
+}
+
+.fab:not(:last-child) {
+      margin-right: 1rem;
+}
+
+.fab:hover,
+.fab:focus {
+      background: var(--blue);
+      border-color: var(--blue);
+}
+
+.fa-facebook-f {
+      padding: 0.6rem 0.8rem !important;
+}
+
+.attribution {
+      color: var(--blue);
+      text-align: center;
+      padding: 0.5rem
+}
+
+.attribution a {
+      color: var(--blue);
+}
+
+.attribution a:hover, 
+.attribution a:focus,
+.cta-link:hover,
+.cta-link:focus {
+      color: var(--white);
+}
+
+
+@media (min-width: 768px) {
+
+      h1 {
+            font-size: 2.3rem;
+      }
+      
+      h2 {
+            font-size: 2rem;
+      }
+      
+      h3 {
+            font-size: 1.8rem;
+      }
+
+      section {
+            padding: 5rem 0;
+      }
+
+      .flex-row {
+            flex-wrap: nowrap;
+      }
+
+      .col {
+            text-align: left;
+            margin-top: 1rem;
+      }
+
+      .navbar-logo {
+            width: 11rem;
+            height: auto;
+      }
+
+      .intro {
+            background: url("./../assets/bg-curvy-desktop.svg") no-repeat center bottom var(--dark-blue);
+      }
+      
+      .feature-row {
+           flex-wrap: wrap; 
+           justify-content: space-around;
+      }
+
+      .feature-card {
+            text-align: center;
+      }
+
+      .quotes {
+            left: 1.5rem;
+      }
+      
+      .testimonial-card:not(:first-child),
+      .cta-text {
+            margin-left: 2rem;
+      }
+      
+      .sign-up-action {
+            padding-top: 1rem;
+      }
+
+      input[type="email"] {
+            width: 23rem;
+            display: inline-block;
+            margin-bottom: 0;
+            margin-right: 1rem; 
+      }
+      
+      .sign-up button {
+            display: inline-block;
+            width: 11rem;
+      }
+
+      .error-message {
+            bottom: -2.2rem;
+      }
+
+      .footer-row {
+            flex-direction: row;
+      }
+
+      .footer-row .col:not(:first-child) {
+            padding-top: 5.5rem;
+      }
+
+      .social-links {
+            align-self: initial;
+      }
+
+      .location {
+            flex-basis: 30%;
+      }
+}
